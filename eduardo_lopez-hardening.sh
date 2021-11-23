@@ -8,15 +8,14 @@ blue="\e[0;34m\033[1m"
 listado=$(yum list installed | grep '^clamav')
 version=$(grep 'VERSION_ID' /etc/os-release)
 
-#1. Script will identify the version of the operating system and EPEL will be installed only on Centos v7 servers 
+#1. Script will identify the version of the operating system 
+#3. EPEL will be installed only on Centos v7 servers 
 
 echo -e "${blue}********************************************************************************************************${endColor}"
 echo -e "${blue}******************************PROCEEDING TO IDENTIFY THE VERSION OF OS**********************************${endColor}"
 if [[ $version = 'VERSION_ID="8"' ]];
 then
-  echo -e "${blue}*********************************************************************************************************${endColor}"
   echo -e "${blue}*************************************YOUR OS IS CentOS v8************************************************${endColor}"
-  echo -e "${blue}*********************************************************************************************************${endColor}"
   echo -e "${blue}*********************************************************************************************************${endColor}"
   echo -e "${blue}************************EPEL WILL NOT BE INSTALLED DUE TO THE CENTOS VERSION*****************************${endColor}"
   echo -e "${blue}*********************************************************************************************************${endColor}"
