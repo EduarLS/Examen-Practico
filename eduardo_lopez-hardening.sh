@@ -10,6 +10,7 @@ version=$(grep 'VERSION_ID' /etc/os-release)
 
 #1. Script will identify the version of the operating system and EPEL will be installed only on Centos v7 servers 
 
+echo -e "${blue}********************************************************************************************************${endColor}"
 echo -e "${blue}******************************PROCEEDING TO IDENTIFY THE VERSION OF OS**********************************${endColor}"
 if [[ $version = 'VERSION_ID="8"' ]];
 then
