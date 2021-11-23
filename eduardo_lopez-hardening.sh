@@ -2,7 +2,7 @@
 #Autor: Eduardo Lopez Solis 1865221
 
 green="\e[0;32m\033[1m"
-final="\033[0m\e[0m"
+endColor="\033[0m\e[0m"
 red="\e[0;31m\033[1m"
 blue="\e[0;34m\033[1m"
 listado=$(yum list installed | grep '^clamav')
