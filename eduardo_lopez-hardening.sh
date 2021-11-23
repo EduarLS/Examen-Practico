@@ -1,5 +1,5 @@
 #!/usr/bin/bash 
-#Autor: Eduardo Lopez Solis
+#Autor: Eduardo Lopez Solis 1865221
 
 listado=$(yum list installed | grep '^clamav')
 version=$(grep 'VERSION_ID' /etc/os-release)
